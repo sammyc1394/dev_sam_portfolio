@@ -2,6 +2,36 @@
   text-align: center;
 }
 
+body{
+  background-color: #E8FFCE;
+  color: #7C73C0;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.intro {
+
+  margin-top: 20%;
+  font-size: 30pt;
+  
+}
+
+.intro-name {
+  font-size: 75pt;
+}
+
+.intro-body {
+  font-size: 15pt;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
