@@ -1,0 +1,88 @@
+.NavBarItems {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.menu-icon:hover {
+    letter-spacing: 0.15em;
+}
+
+.menu-icon {
+    justify-self: start;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-items {
+    background-color: #E8FFCE;
+    display: inline;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0.2rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.nav-items:hover {
+    background-color: #d0f9c4;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+
+@media screen and (max-width: 640px) {
+    .NavBarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50vw;
+        height: 80px;
+        position: absolute;
+        top: -250%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        top: 30px;
+        opacity: 1;    
+        justify-content: center;
+        margin-right: 3.5rem;
+        background-color: #E8FFCE;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-items {
+        text-align: center;
+        margin: 0.2rem;
+        padding: 0.2rem 0.4rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-items:hover {
+        background-color: #d0f9c4;
+        border: 4px;
+        border-radius: 4px;
+    }
+
+}
