@@ -7,7 +7,7 @@ import { isEditable } from "@testing-library/user-event/dist/utils";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Software Developer", "UX/UI Designer"]; 
+    const toRotate = ["Web Developer", "Software Developer"]; 
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
